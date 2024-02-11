@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Permanent+Marker&family=Signika+Negative:wght@700&display=swap");
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Inconsolata", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 96px 0 96px 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Navigation */
+.navigation {
+  padding: 12px 0 12px 0;
+  background-color: #19A7CE;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  position: relative;
+  margin-left: 36px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation a:hover {
+  color: #33d9b2;
+}
+
+.navigation ul ul li {
+  display: block;
+  margin-bottom: 12px;
+  margin-left: 0;
+}
+
+.navigation ul li ul {
+  display: none;
+}
+
+.navigation ul li:hover ul {
+  display: block;
+  text-align: center;
+  position: absolute;
+  background-color: #19A7CE;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px;
+  border-radius: 10%;
+}
+
+.navigation ul li ul li a {
+  color: #fff;
+  padding: 0 24px;
+  display: block;
+}
+
+.navigation ul li ul li a:hover {
+  color: #33d9b2;
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+/* Header */
+header {
+  background: #19A7CE;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 72px;
+  word-spacing: -24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.page-subtitle {
+  margin: 24 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.page-title span {
+  font-family: "Permanent Marker", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  color: #19A7CE;
+}
+
+.btn-one {
+  border-color: #fff;
+  color: #fff;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+  transition: all 1s;
+  margin-bottom: 5px;
+}
+
+/* Facts */
+.section-title {
+  font-size: 48px;
+  color: #146C94;
+  margin: 0 0 72px 0;
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1;
+  position: relative;
+  gap: 10px;
+}
+
+.facts .wrapper {
+  color: #146C94;
+  gap: 5%;
+}
+
+.facts h3 {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+.facts h4 {
+  position: absolute;
+  font-size: 144px;
+  line-height: 1;
+  z-index: 1;
+  color: #87CBB9;
+  top: 5px;
+  left: 5px;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.facts p {
+  position: relative;
+  z-index: 2;
+}
+
+.facts p:first-of-type {
+  font-weight: 700;
+}
+
+.btn-two {
+  border-color: #AFD3E2;
+  color: #AFD3E2;
+  background-image: linear-gradient(90deg, #AFD3E2 50%, transparent 50%);
+  transition: all 1s;
+  position: absolute;
+  bottom: -65px;
+}
+
+.btn-three {
+  border-color: #ff5252;
+  color: #ff5252;
+  background-image: linear-gradient(90deg, #ff5252 50%, transparent 50%);
+  transition: all 1s;
+  position: absolute;
+  bottom: -65px;
+}
+
+.btn-four {
+  border-color: #33d9b2;
+  color: #33d9b2;
+  background-image: linear-gradient(90deg, #33d9b2 50%, transparent 50%);
+  transition: all 1s;
+  position: absolute;
+  bottom: -65px;
+}
+
+.facts .btn:hover {
+  background-position: 0 100%;
+  color: black;
+  font-weight: 600;
+}
+
+/* Examples*/
+.skill-image {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-description {
+  flex: 1;
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
+
+.skill-description p {
+  display: inline-block;
+}
+
+.examples .box {
+  display: flex;
+  flex: 0 0 50%;
+  min-height: 300px;
+  position: relative;
+  margin-bottom: 96px;
+  padding: 0 5px;
+}
+
+.skill-image:after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 10px;
+  width: 100%;
+  height: 100%;
+  background: #87CBB9;
+  z-index: 2;
+  opacity: 0.3;
+  transition: all 1s;
+}
+
+.skill-image:hover:after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.examples .wrapper {
+  color: #146C94;
+  margin: auto;
+}
+
+.examples p:last-of-type {
+  font-weight: 700;
+}
+
+.btn-five {
+  border: none;
+  margin: 36px 0;
+  padding: 0;
+  text-align: left;
+  font-weight: 400;
+  color: #AFD3E2;
+}
+
+/* Contact*/
+.contact {
+  background: #19A7CE;
+  margin: 0;
+}
+
+.contact-form {
+  background: #19A7CE;
+  color: #fff;
+  border: solid;
+  border-width: 0 0 4px 0;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 20px;
+}
+
+form {
+  flex: 2 0 0;
+  text-align: center;
+}
+
+.contact-box {
+  flex: 1 0 0;
+  padding: 0 0 0 96px;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.btn-six {
+  border-color: #fff;
+  color: #fff;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+  transition: all 1s;
+  margin-bottom: 5px;
+  background-color: transparent;
+}
+
+/* Footer*/
+footer {
+  margin: 46px 0;
+}
+
+footer li {
+  font-size: 0;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer li:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  font-size: 30px;
+  background: #19A7CE;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .examples .box {
+    flex-direction: column;
+  }
+  .container {
+    margin: 0;
+  }
+  .section {
+    padding: 36px 0 36px 0;
+  }
+  .btn-two {
+    position: relative;
+    bottom: 0;
+  }
+  .btn-three {
+    position: relative;
+    bottom: 0;
+  }
+  .btn-four {
+    position: relative;
+    bottom: 0;
+  }
+  .contact-box {
+    margin-top: 20px;
+  }
+  .navigation ul li {
+    margin-left: 5px;
+  }
+  .contact-box {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
